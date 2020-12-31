@@ -3,6 +3,11 @@
   "version": "0.0.1",
   "description": "",
   "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "versionup": "lerna version --conventional-commits",
+    "versionup:patch": "lerna version patch --conventional-commits",
+    "versionup:minor": "lerna version minor --conventional-commits",
+    "versionup:major": "lerna version major --conventional-commits",
     "test": "lerna run test"
   },
   "author": "nakatanakatana",
@@ -10,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/nakatanakatana/sandbox-frontend/issues"
   },
-  "homepage": "https://github.com/nakatanakatana/sandbox-frontend#readme"
+  "homepage": "https://github.com/nakatanakatana/sandbox-frontend#readme",
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
 }
