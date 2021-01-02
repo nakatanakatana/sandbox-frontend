@@ -1,0 +1,2 @@
+# `@nakatanakatana/eslint-config-react`
+
