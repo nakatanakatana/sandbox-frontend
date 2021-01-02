@@ -8,7 +8,10 @@
     "versionup:patch": "lerna version patch --conventional-commits",
     "versionup:minor": "lerna version minor --conventional-commits",
     "versionup:major": "lerna version major --conventional-commits",
-    "test": "lerna run test"
+    "lerna:run": "lerna run --stream",
+    "start": "yarn lerna:run start",
+    "build": "yarn lerna:run build",
+    "test": "yarn lerna:run test"
   },
   "author": "nakatanakatana",
   "license": "MIT",
