@@ -1,0 +1,33 @@
+{
+  "name": "@models/class-validator",
+  "version": "0.0.1",
+  "description": "> TODO: description",
+  "author": "tanaka <nakatanakatana@gmail.com>",
+  "homepage": "https://github.com/nakatanakatana/sandbox-frontend/tree/master/packages/class-validator#readme",
+  "license": "MIT",
+  "main": "lib/class-validator.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nakatanakatana/sandbox-frontend.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "build": "tsc",
+    "typedoc": "typedoc --out docs src/main.ts",
+    "jsonschema": "tsc --build tsconfig.docs.json && node docs/src/docs.js"
+  },
+  "bugs": {
+    "url": "https://github.com/nakatanakatana/sandbox-frontend/issues"
+  },
+  "dependencies": {
+    "class-transformer": "^0.3.2",
+    "class-validator": "^0.13.1",
+    "class-validator-jsonschema": "^2.1.1"
+  },
+  "devDependencies": {
+    "@microsoft/tsdoc": "^0.13.0",
+    "ts-node": "^9.1.1",
+    "typedoc": "^0.20.19",
+    "typescript": "^4.1.3"
+  }
+}

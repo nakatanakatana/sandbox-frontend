@@ -1,0 +1,34 @@
+{
+  "Post": {
+    "properties": {
+      "title": { "description": "タイトル" },
+      "text": { "pattern": "hello", "type": "string" },
+      "rating": {
+        "maximum": 10,
+        "type": "integer",
+        "minimum": 0,
+        "description": "評価"
+      },
+      "email": {
+        "format": "email",
+        "type": "string",
+        "description": "メールアドレス"
+      },
+      "site": { "format": "hostname", "type": "string" },
+      "createDate": {
+        "oneOf": [
+          { "format": "date", "type": "string" },
+          { "format": "date-time", "type": "string" }
+        ]
+      }
+    },
+    "type": "object",
+    "required": ["title", "text", "rating", "email", "site", "createDate"],
+    "description": "Post"
+  },
+  "Item": {
+    "properties": { "num": { "maximum": 100, "type": "integer" } },
+    "type": "object",
+    "required": ["num"]
+  }
+}
